@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class UserTableViewCell: UITableViewCell {
     
@@ -26,6 +27,13 @@ class UserTableViewCell: UITableViewCell {
         super.init(coder: coder)
         
         self.initializeSubViews()
+    }
+    
+    func setData(_ user: User) {
+        
+        self.labelUsername.text = user.username
+        self.imageViewAvatar.kf.setImage(with: user.avatar)
+        self.labelProfileLink.text = user.profile.absoluteString
     }
     
     private func initializeSubViews() {
