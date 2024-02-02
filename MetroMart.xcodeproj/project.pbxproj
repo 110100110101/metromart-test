@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720F6E226841FBEE008BCB9A /* Pods_MetroMart_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEDB257FBCBF5AC9F0E78F0 /* Pods_MetroMart_App.framework */; };
 		E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */; };
 		E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */; };
 		E6EBDAF72B6CEB9400E9CDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF62B6CEB9400E9CDDF /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		E6EBDAFC2B6CEB9500E9CDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EBDAFB2B6CEB9500E9CDDF /* Assets.xcassets */; };
 		E6EBDAFF2B6CEB9500E9CDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EBDAFD2B6CEB9500E9CDDF /* LaunchScreen.storyboard */; };
 		E6EBDB062B6CECEF00E9CDDF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDB052B6CECEF00E9CDDF /* User.swift */; };
+		E6EBDB072B6CEE0D00E9CDDF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603F4B22B6CE5A800925715 /* ListViewController.swift */; };
+		E6EBDB082B6CEE1000E9CDDF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603F4B32B6CE73600925715 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AC51F0DFC71D605A38FAD30 /* Pods-MetroMart-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroMart-App.debug.xcconfig"; path = "Target Support Files/Pods-MetroMart-App/Pods-MetroMart-App.debug.xcconfig"; sourceTree = "<group>"; };
+		9E2F029331B61427C9D03F6B /* Pods-MetroMart-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroMart-App.release.xcconfig"; path = "Target Support Files/Pods-MetroMart-App/Pods-MetroMart-App.release.xcconfig"; sourceTree = "<group>"; };
+		CBEDB257FBCBF5AC9F0E78F0 /* Pods_MetroMart_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroMart_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E603F4B22B6CE5A800925715 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E603F4B32B6CE73600925715 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E6EBDAF02B6CEB9400E9CDDF /* MetroMart-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetroMart-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720F6E226841FBEE008BCB9A /* Pods_MetroMart_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36F0CC0A9C49FC42E652CA8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBEDB257FBCBF5AC9F0E78F0 /* Pods_MetroMart_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB821E76283DED737CE31516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AC51F0DFC71D605A38FAD30 /* Pods-MetroMart-App.debug.xcconfig */,
+				9E2F029331B61427C9D03F6B /* Pods-MetroMart-App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E603F48E2B6CE0E400925715 = {
 			isa = PBXGroup;
 			children = (
 				E6EBDAF12B6CEB9400E9CDDF /* MetroMart-App */,
 				E603F4982B6CE0E400925715 /* Products */,
+				CB821E76283DED737CE31516 /* Pods */,
+				36F0CC0A9C49FC42E652CA8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6EBDB032B6CEB9500E9CDDF /* Build configuration list for PBXNativeTarget "MetroMart-App" */;
 			buildPhases = (
+				4DA7416F030DBC7246A5D9D8 /* [CP] Check Pods Manifest.lock */,
 				E6EBDAEC2B6CEB9400E9CDDF /* Sources */,
 				E6EBDAED2B6CEB9400E9CDDF /* Frameworks */,
 				E6EBDAEE2B6CEB9400E9CDDF /* Resources */,
+				C8BB50B6CFB3A8E2399C99F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +202,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DA7416F030DBC7246A5D9D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetroMart-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8BB50B6CFB3A8E2399C99F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetroMart-App/Pods-MetroMart-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetroMart-App/Pods-MetroMart-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetroMart-App/Pods-MetroMart-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6EBDAEC2B6CEB9400E9CDDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,7 +251,9 @@
 			files = (
 				E6EBDB062B6CECEF00E9CDDF /* User.swift in Sources */,
 				E6EBDAF72B6CEB9400E9CDDF /* ViewController.swift in Sources */,
+				E6EBDB082B6CEE1000E9CDDF /* ListViewModel.swift in Sources */,
 				E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */,
+				E6EBDB072B6CEE0D00E9CDDF /* ListViewController.swift in Sources */,
 				E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +401,7 @@
 		};
 		E6EBDB012B6CEB9500E9CDDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC51F0DFC71D605A38FAD30 /* Pods-MetroMart-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -356,6 +430,7 @@
 		};
 		E6EBDB022B6CEB9500E9CDDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2F029331B61427C9D03F6B /* Pods-MetroMart-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
