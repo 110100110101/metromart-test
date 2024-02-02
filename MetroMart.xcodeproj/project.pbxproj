@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		720F6E226841FBEE008BCB9A /* Pods_MetroMart_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEDB257FBCBF5AC9F0E78F0 /* Pods_MetroMart_App.framework */; };
+		E665B7642B6CF17300FB9204 /* ConcreteUseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */; };
 		E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */; };
 		E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */; };
 		E6EBDAF72B6CEB9400E9CDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF62B6CEB9400E9CDDF /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		CBEDB257FBCBF5AC9F0E78F0 /* Pods_MetroMart_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroMart_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E603F4B22B6CE5A800925715 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E603F4B32B6CE73600925715 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteUseProvider.swift; sourceTree = "<group>"; };
 		E6EBDAF02B6CEB9400E9CDDF /* MetroMart-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetroMart-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				E6EBDB042B6CECE300E9CDDF /* Models */,
 				E603F4B02B6CE57700925715 /* List View */,
 				E603F4B12B6CE58100925715 /* Detail View */,
+				E665B7622B6CF16000FB9204 /* Networking */,
 			);
 			name = Modules;
 			path = MetroMart;
@@ -108,6 +111,14 @@
 			children = (
 			);
 			name = "Detail View";
+			sourceTree = "<group>";
+		};
+		E665B7622B6CF16000FB9204 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		E6EBDAF12B6CEB9400E9CDDF /* MetroMart-App */ = {
@@ -250,6 +261,7 @@
 			files = (
 				E6EBDB062B6CECEF00E9CDDF /* User.swift in Sources */,
 				E6EBDAF72B6CEB9400E9CDDF /* ViewController.swift in Sources */,
+				E665B7642B6CF17300FB9204 /* ConcreteUseProvider.swift in Sources */,
 				E6EBDB082B6CEE1000E9CDDF /* ListViewModel.swift in Sources */,
 				E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */,
 				E6EBDB072B6CEE0D00E9CDDF /* ListViewController.swift in Sources */,
