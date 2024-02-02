@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import RxSwift
+import NVActivityIndicatorView
 
 class ListViewController: UIViewController, UITableViewDataSource {
     
     private var tableView: UITableView!
     
     private let viewModel: ListViewModel
+    private let disposeBag = DisposeBag()
     
     // MARK: - Initializers
     
@@ -30,12 +33,20 @@ class ListViewController: UIViewController, UITableViewDataSource {
     
     // MARK: View Lifecycles
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.bind()
+        self.viewModel.getUsers()
+    }
+    
     override func loadView() {
         
         let view = UIView()
         view.backgroundColor = .orange
         
         self.tableView = UITableView()
+        self.tableView.dataSource = self
         self.tableView.register(UserTableViewCell.self, forCellReuseIdentifier: "UserTableViewCell")
         self.tableView.estimatedRowHeight = 32.0
         self.tableView.rowHeight = UITableView.automaticDimension
@@ -62,6 +73,24 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         let dequeuedCell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
         
+        let user = self.viewModel.users.value[indexPath.row]
+        dequeuedCell.setData(user)
+        
         return dequeuedCell
+    }
+    
+    private func bind() {
+        
+        self.viewModel.isLoading.subscribe(onNext: { isLoading in
+            // TODO: Present or hide loading indicatorss
+        }).disposed(by: self.disposeBag)
+        
+        self.viewModel.isErrorEncountered.subscribe(onNext: { isErrorEncountered in
+            // TODO: Handle Error
+        }).disposed(by: self.disposeBag)
+        
+        self.viewModel.users.subscribe(onNext: { [weak self] _ in
+            self?.tableView.reloadData()
+        }).disposed(by: self.disposeBag)
     }
 }
