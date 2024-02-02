@@ -61,17 +61,20 @@ class UserTableViewCell: UITableViewCell {
         
         self.stackViewData = UIStackView()
         self.stackViewData.axis = .vertical
+        self.stackViewData.distribution = .fillEqually
         self.viewMain.addSubview(self.stackViewData)
         self.stackViewData.snp.makeConstraints { make in
-            make.left.equalTo(self.viewMain.snp.right).inset(4.0)
+            make.left.equalTo(self.imageViewAvatar.snp.right).offset(8.0)
             make.right.equalToSuperview().inset(4.0)
-            make.centerY.equalToSuperview()
+            make.top.bottom.equalToSuperview()
         }
         
         self.labelUsername = UILabel()
+        self.labelUsername.font = UIFont.systemFont(ofSize: 12.0, weight: .regular)
         self.stackViewData.addArrangedSubview(self.labelUsername)
         
         self.labelProfileLink = UILabel()
+        self.labelProfileLink.font = UIFont.systemFont(ofSize: 12.0, weight: .light)
         self.labelProfileLink.textColor = .gray
         self.stackViewData.addArrangedSubview(self.labelProfileLink)
     }
