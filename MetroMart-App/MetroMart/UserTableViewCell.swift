@@ -29,6 +29,14 @@ class UserTableViewCell: UITableViewCell {
         self.initializeSubViews()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        self.imageViewAvatar.image = nil
+        self.labelUsername.text = nil
+        self.labelProfileLink.text = nil
+    }
+    
     func setData(_ user: User) {
         
         self.labelUsername.text = user.username
@@ -47,7 +55,7 @@ class UserTableViewCell: UITableViewCell {
         self.imageViewAvatar = UIImageView()
         self.viewMain.addSubview(self.imageViewAvatar)
         self.imageViewAvatar.snp.makeConstraints { make in
-            make.left.top.equalToSuperview()
+            make.left.bottom.top.equalToSuperview()
             make.height.width.equalTo(32.0)
         }
         
