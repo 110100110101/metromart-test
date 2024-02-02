@@ -15,9 +15,9 @@ protocol UserProvider {
 
 class ListViewModel {
     
-    private let isLoading = PublishRelay<Bool>()
-    private let isErrorEncountered = PublishRelay<Bool>()
-    private let users = PublishRelay<[User]>()
+    let isLoading = PublishRelay<Bool>()
+    let isErrorEncountered = PublishRelay<Bool>()
+    let users = BehaviorRelay<[User]>(value: [])
     
     private let provider: UserProvider
     
