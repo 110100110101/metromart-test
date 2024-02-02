@@ -15,6 +15,7 @@
 		E603F4A62B6CE0E500925715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E603F4A82B6CE0E500925715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E603F4B22B6CE5A800925715 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E603F4B32B6CE73600925715 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -61,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				E603F4B22B6CE5A800925715 /* ListViewController.swift */,
+				E603F4B32B6CE73600925715 /* ListViewModel.swift */,
 			);
 			name = "List View";
 			sourceTree = "<group>";
