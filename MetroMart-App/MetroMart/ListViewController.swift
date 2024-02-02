@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import NVActivityIndicatorView
 
-class ListViewController: UIViewController, UITableViewDataSource {
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     private var tableView: UITableView!
     
@@ -47,6 +47,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         self.tableView = UITableView()
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         self.tableView.register(UserTableViewCell.self, forCellReuseIdentifier: "UserTableViewCell")
         self.tableView.estimatedRowHeight = 32.0
         self.tableView.rowHeight = UITableView.automaticDimension
@@ -77,6 +78,15 @@ class ListViewController: UIViewController, UITableViewDataSource {
         dequeuedCell.setData(user)
         
         return dequeuedCell
+    }
+    
+    // MARK: - UITableViewDelegate Methods
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let user = self.viewModel.users.value[indexPath.row]
+        UIApplication.shared.open(user.profile)
     }
     
     private func bind() {
