@@ -11,7 +11,6 @@
 		E665B7642B6CF17300FB9204 /* ConcreteUseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */; };
 		E665B7662B6CF1C600FB9204 /* GithubTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665B7652B6CF1C600FB9204 /* GithubTarget.swift */; };
 		E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */; };
-		E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */; };
 		E6EBDAF72B6CEB9400E9CDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF62B6CEB9400E9CDDF /* ViewController.swift */; };
 		E6EBDAFA2B6CEB9400E9CDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6EBDAF82B6CEB9400E9CDDF /* Main.storyboard */; };
 		E6EBDAFC2B6CEB9500E9CDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6EBDAFB2B6CEB9500E9CDDF /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 		E665B7652B6CF1C600FB9204 /* GithubTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTarget.swift; sourceTree = "<group>"; };
 		E6EBDAF02B6CEB9400E9CDDF /* MetroMart-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetroMart-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6EBDAF62B6CEB9400E9CDDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E6EBDAF92B6CEB9400E9CDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6EBDAFB2B6CEB9500E9CDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			children = (
 				E603F4AF2B6CE57300925715 /* Modules */,
 				E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */,
-				E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */,
 				E6EBDAF62B6CEB9400E9CDDF /* ViewController.swift */,
 				E6EBDAF82B6CEB9400E9CDDF /* Main.storyboard */,
 				E6EBDAFB2B6CEB9500E9CDDF /* Assets.xcassets */,
@@ -268,7 +265,6 @@
 				E6EBDB082B6CEE1000E9CDDF /* ListViewModel.swift in Sources */,
 				E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */,
 				E6EBDB072B6CEE0D00E9CDDF /* ListViewController.swift in Sources */,
-				E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */,
 				E665B7662B6CF1C600FB9204 /* GithubTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
