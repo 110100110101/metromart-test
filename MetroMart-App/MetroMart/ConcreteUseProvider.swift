@@ -6,10 +6,33 @@
 //
 
 import Foundation
+import Moya
 
 class ConcreteProvider: UserProvider {
     
+    private let provider = MoyaProvider<GithubTarget>()
+    
     func getUsers(completion: @escaping ([User]?) -> ()) {
-        // TODO: Use Moya
+        
+        self.provider.request(.users) { result in
+            
+            switch result {
+                
+            case .success(let response):
+                
+                do {
+                    
+                    let filteredResponse = try response.filterSuccessfulStatusCodes()
+                    let decodedUsers = try JSONDecoder().decode([User].self, from: filteredResponse.data)
+                    completion(decodedUsers)
+                }
+                catch {
+                    completion(nil)
+                }
+                
+            case .failure:
+                completion(nil)
+            }
+        }
     }
 }
