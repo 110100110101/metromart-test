@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		720F6E226841FBEE008BCB9A /* Pods_MetroMart_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEDB257FBCBF5AC9F0E78F0 /* Pods_MetroMart_App.framework */; };
 		E665B7642B6CF17300FB9204 /* ConcreteUseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */; };
+		E665B7662B6CF1C600FB9204 /* GithubTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665B7652B6CF1C600FB9204 /* GithubTarget.swift */; };
 		E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */; };
 		E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */; };
 		E6EBDAF72B6CEB9400E9CDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EBDAF62B6CEB9400E9CDDF /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		E603F4B22B6CE5A800925715 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E603F4B32B6CE73600925715 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteUseProvider.swift; sourceTree = "<group>"; };
+		E665B7652B6CF1C600FB9204 /* GithubTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTarget.swift; sourceTree = "<group>"; };
 		E6EBDAF02B6CEB9400E9CDDF /* MetroMart-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetroMart-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDAF22B6CEB9400E9CDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6EBDAF42B6CEB9400E9CDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E665B7632B6CF17300FB9204 /* ConcreteUseProvider.swift */,
+				E665B7652B6CF1C600FB9204 /* GithubTarget.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				E6EBDAF32B6CEB9400E9CDDF /* AppDelegate.swift in Sources */,
 				E6EBDB072B6CEE0D00E9CDDF /* ListViewController.swift in Sources */,
 				E6EBDAF52B6CEB9400E9CDDF /* SceneDelegate.swift in Sources */,
+				E665B7662B6CF1C600FB9204 /* GithubTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
